@@ -15,7 +15,7 @@ guesses = '{:,}'.format(returned[0])
 
 if returned[1] == "not_found":
     print(
-        f'\nUnable to solve password {password}. {returned[0]} guesses were attempted.\n')
+        f'\nUnable to solve password {password}. {guesses} guesses were attempted.\n')
 else:
     print(
         f'\nSolved password "{password}" with word(s) & number(s) "{returned[1]}" in {guesses} guesses which took {format(timeE-timeS)} seconds.\n')
